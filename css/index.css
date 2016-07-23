@@ -1,0 +1,569 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.main {
+    width: 640px;
+    height: 960px;
+    background: pink;
+}
+
+.main .list {
+    width: 100%;
+    height: 100%;
+}
+
+.main .list > li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: none;
+    z-index: 1;
+}
+
+.main .list > li.zIndex {
+    z-index: 2;
+}
+
+.main .list > li:nth-child(4) {
+    background-color: #eee;
+}
+
+.main .list > li:nth-of-type(1) {
+    display: block;
+}
+
+.music {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 5rem;
+    height: 5rem;
+    background: url("../music/music.svg") no-repeat;
+    background-size: 100% 100%;
+    z-index: 10;
+}
+
+.musicMove {
+    -webkit-animation: musicMove 1.5s linear 0s infinite;
+    animation: musicMove 1.5s linear 0s infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.music audio {
+    display: none;
+}
+
+h3, h4 {
+    font-weight: 500;
+}
+
+.page1 {
+    background: url('../img/1.jpg') no-repeat;
+    text-align: center;
+    background-size: 100% 100%;
+}
+
+.page1 > * {
+    display: none;
+}
+
+.head {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.page1 .p1_head {
+    margin-top: 10rem;
+}
+
+.page1 span {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    font-size: 9rem;
+}
+
+.page1 h3 {
+    margin-bottom: 4rem;
+    font-size: 6rem;
+}
+
+.page1 h4 {
+    font-size: 5rem;
+}
+
+.arr {
+    display: block;
+    width: 90px;
+    height: 52px;
+    z-index: 7;
+    position: absolute;
+    left: 50%;
+    margin-left: -45px;
+    bottom: 70px;
+    animation: 1.5s infinite arrMove;
+}
+
+@keyframes arrMove {
+    0% {
+        transform: translateY(60px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(30px);
+        opacity: .8;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes arrMove {
+    0% {
+        transform: translateY(60px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(30px);
+        opacity: .8;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
+/*-----------------------page1 end----------------------*/
+.page2{
+    background: url('../img/2.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.page2 .p2_head {
+    margin: 2rem;
+}
+
+.page2 .info{
+    font-size: 6rem;
+    color: #666;
+}
+.main .page2 ul {
+    height: 100%;
+    padding: 10rem 0;
+}
+
+.main .page2 li {
+    display: none;
+    height: 10%;
+    font-size: 3.5rem;
+    color: #666;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.main .page2 li span {
+    display: block;
+}
+
+/*----------------------page3 start------------------*/
+.page3{
+    line-height: 4rem;
+    background: url('../img/3.png') no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.page3 h1{
+    margin-top: 6rem;
+    text-align: center;
+    line-height: 6rem;
+    font-size: 6rem;
+}
+.page3 .line{
+    margin: 4rem 0 0 50%;
+    width: 0.1rem;
+    background: #fff;
+}
+.page3 div{
+    font-size: 3rem;
+}
+.page3 .fLeft{
+    position: absolute;
+    top: 23rem;
+    padding-left: 1rem;
+    width: 45%;
+}
+.page3 .fRight{
+    position: absolute;
+    right: 1rem;
+    bottom:14rem;
+    width: 45%;
+}
+/*----------------------page4 start------------------*/
+
+.page4 {
+    position: relative;
+}
+
+.page4 .page3_ul {
+    position: absolute;
+    bottom: 5rem;
+    left: 1rem;
+    width: 11rem;
+    border-right: 1px solid #999;
+}
+
+.page4 .page3_ul li {
+    margin: 2rem 0;
+    width: 9rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 3rem;
+}
+
+.page4 .page3_ul li:nth-child(1) {
+    background-color: #06f;
+}
+
+.page4 .page3_ul li:nth-child(2) {
+    background-color: #f30;
+}
+
+.page4 .page3_ul li:nth-child(3) {
+    background-color: #ff6;
+}
+
+.page4 .page3_ul li:nth-child(4) {
+    background-color: #3cf;
+}
+
+.page4 .page3_ul li:nth-child(5) {
+    background-color: #3c0;
+}
+
+.page4 .page3_ul li:nth-child(6) {
+    background-color: #06f;
+}
+
+.page4 .flip {
+    margin: 7rem;
+    display: block;
+    font-size: 8rem;
+    color: #fff;
+    transform-origin: 16rem;
+    text-shadow: 1px 1px rgba(197, 223, 248, 0.8), 2px 2px rgba(197, 223, 248, 0.8), 3px 3px rgba(197, 223, 248, 0.8), 4px 4px rgba(197, 223, 248, 0.8), 5px 5px rgba(197, 223, 248, 0.8), 6px 6px rgba(197, 223, 248, 0.8)
+}
+
+.page4 ol {
+    position: absolute;
+    left: 12rem;
+    bottom: 4.5rem;
+    width: 27rem;
+}
+
+.page4 ol li {
+    margin: 3rem 0;
+    height: 3rem;
+}
+
+.page4 ol li:nth-of-type(1) {
+    background-color: #06f;
+    -webkit-animation: tip1 1s linear 1.5s;
+    animation: tip1 1s linear 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.page4 ol li:nth-child(2) {
+    background-color: #f30;
+    -webkit-animation: tip2 1s linear 1.5s;
+    animation: tip2 1s linear 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.page4 ol li:nth-child(3) {
+    background-color: #ff6;
+    -webkit-animation: tip3 1s linear 1.5s;
+    animation: tip3 1s linear 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.page4 ol li:nth-child(4) {
+    background-color: #3cf;
+    -webkit-animation: tip4 1s linear 1.5s;
+    animation: tip4 1s linear 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.page4 ol li:nth-child(5) {
+    background-color: #3c0;
+    -webkit-animation: tip5 1s linear 1.5s;
+    animation: tip5 1s linear 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.page4 ol li:nth-child(6) {
+    background-color: #06f;
+    -webkit-animation: tip6 1s linear 1.5s;
+    animation: tip6 1s linear 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.page5{
+    background: url('../img/5_bg.jpg');
+    background-size: 100% 100%;
+}
+.page5 h3{
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 7rem;
+}
+.page5 img{
+    width: 100%;
+    margin-top: 30%;
+}
+
+.page6{
+    color: #424242;
+    background: url('../img/6_bg.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.page6 .lastHead{
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    margin-left: -7.5rem;
+    width: 15rem;
+    height: 15rem;
+    background: url('../img/6.jpg') no-repeat;
+    background-size: 100% 100%;
+    border-radius: 50%;
+}
+.page6 .a1{
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    margin-left: -8.5rem;
+    width: 17rem;
+    height: 17rem;
+    background: url('../img/a1.png') no-repeat;
+    background-size: 100% 100%;
+    border-radius: 50%;
+}
+
+.a1Move {
+    -webkit-animation: a1Move 3s linear 0s infinite;
+    animation: a1Move 3s linear 0s infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.page6 li{
+    line-height: 6.5rem;
+    text-align: center;
+    color: #000;
+    font-size: 4rem;
+}
+.page6 li:nth-child(1){
+    margin-top: 21rem;
+    font-size: 6.5rem;
+}
+
+@-webkit-keyframes a1Move {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes a1Move {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes tip1 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 25rem;
+    }
+}
+
+@keyframes tip2 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 25rem;
+    }
+}
+
+@keyframes tip3 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 20rem;
+    }
+}
+
+@keyframes tip4 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 23rem;
+    }
+}
+
+@keyframes tip5 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 20rem;
+    }
+}
+
+@keyframes tip6 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 19rem;
+    }
+}
+
+@-webkit-keyframes rubberBand {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes rubberBand {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.rubberBand {
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
